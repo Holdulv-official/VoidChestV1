@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">
+    <link rel="manifest" href="/Assets/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoidChest Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+
+<div class="intro-container" id="intro-container">
+        <div class="intro" id="intro-text">
+            <h1>VoidChest</h1>
+            <p>by holdulv</p>
+            <div class="copyright">
+                <p>&copy; 2024 VoidChest. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+<div class="content">
+    <div class="container">
+        <h1>VoidChest AI Chat</h1>
+
+        <!-- API Selection and API Key Input -->
+        <label for="aiApi">Select AI API</label>
+        <select id="aiApi">
+            <!-- Options will be populated dynamically from server -->
+        </select>
+        
+        <label for="apiKey">Enter API Key</label>
+        <input type="text" id="apiKey" placeholder="Enter your API key here">
+
+        <!-- Start conversation -->
+        <label for="userMessage">Enter your message</label>
+        <textarea id="userMessage" placeholder="Start chatting..."></textarea>
+        
+        <button id="startConversationBtn">Start Conversation</button>
+
+        <div id="response"></div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+      <script src="intro.js"></script>
+</body>
+</html>

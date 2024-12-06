@@ -1,0 +1,40 @@
+[
+  {
+    "name": "OpenAI",
+    "apiKey": "sk-xxxxx",
+    "endpoint": "https://api.openai.com/v1/chat/completions",
+    "requestBody": {
+      "model": "gpt-4o-mini",
+      "messages": [{"role": "user", "content": "{{message}}"}],
+      "temperature": 0.7
+    }
+  },
+  {
+    "name": "Anthropic Claude",
+    "apiKey": "claude-key-xxxxx",
+    "endpoint": "https://api.anthropic.com/v1/complete",
+    "requestBody": {
+      "model": "claude-1",
+      "prompt": "{{message}}",
+      "max_tokens": 2048,
+      "temperature": 0.7
+    }
+  },
+  {
+    "name": "AI21",
+    "apiKey": "ai21-key-xxxxx",
+    "endpoint": "https://api.ai21.com/studio/v1/chat/completions",
+    "requestBody": {
+      "model": "jamba-1.5-large",
+      "messages": [{"text": "{{message}}"}],
+      "documents": [],
+      "tools": [],
+      "n": 1,
+      "max_tokens": 2048,
+      "temperature": 0.4,
+      "top_p": 1,
+      "stop": [],
+      "response_format": { "type": "text" }
+    }
+  }
+]
